@@ -32,6 +32,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Cherish stuff
 TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=deny2311
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

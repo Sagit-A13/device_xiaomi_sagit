@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit some common Charish stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+#Build Gapps variant
+CHERISH_VANILLA := false
+
 PRODUCT_NAME := cherish_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi

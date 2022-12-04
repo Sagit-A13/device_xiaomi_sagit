@@ -22,21 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
 # Inherit some common Charish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/syberia/common.mk)
+SYBERIA_BUILD_TYPE := UNOFFICIAL
 
-#Build Gapps variant
-CHERISH_VANILLA := false
-
-PRODUCT_NAME := cherish_sagit
+PRODUCT_NAME := syberia_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Cherish stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=deny2311
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

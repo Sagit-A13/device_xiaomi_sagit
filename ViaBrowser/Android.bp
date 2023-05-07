@@ -1,0 +1,10 @@
+android_app_import {
+		name: "ViaBrowser",
+		owner: "ViaBrowser", 
+		apk: "ViaBrowser.apk",
+		presigned: true, dex_preopt: {
+		enabled: false,
+		},
+		product_specific: true,
+		overrides: ["Browser2"],
+}

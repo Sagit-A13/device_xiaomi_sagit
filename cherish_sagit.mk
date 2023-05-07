@@ -24,6 +24,8 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit some common Cherish stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+CHERISH_VANILLA := true
+
 PRODUCT_NAME := cherish_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi

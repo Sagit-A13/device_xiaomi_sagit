@@ -19,14 +19,6 @@
     <!-- Indicates whether device has a front facing fingerprint sensor (not udfps). -->
     <bool name="config_is_front_facing_fps" translatable="false">true</bool>
 
-    <!-- Defines the location of the fingerprint sensor on the device
-         0 = back
-         1 = front
-         2 = left side
-         3 = right side
-    -->
-    <integer name="config_fingerprintSensorLocation">1</integer>
-
 <!-- Battery Health enable -->
 <bool name="config_supportBatteryHealth">true</bool>
 
@@ -34,4 +26,10 @@
 <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
 <string name="config_batCurCap">/sys/class/power_supply/bms/charge_counter</string>
 <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+
+<!-- Smart charging -->
+<bool name="config_supportSmartCharging">true</bool>
+<string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+<string name="config_smartChargingSuspendValue" translatable="false">1</string>
+<string name="config_smartChargingResumeValue" translatable="false">0</string>
 </resources>

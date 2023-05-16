@@ -50,12 +50,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SagitWifiOverlay
 
-
-#Add Via Browser when vanilla build
-ifeq ($(CHERISH_VANILLA), true)
-PRODUCT_PACKAGES += \
-    ViaBrowser
-endif
-
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)

@@ -21,21 +21,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common Cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-CHERISH_VANILLA := true
-
-PRODUCT_NAME := cherish_sagit
+PRODUCT_NAME := xtended_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Cherish stuff
+# Xtended Stuffs
 TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=deny2311
+XTENDED_BUILD_MAINTAINER := deny2311
+XTENDED_BUILD_TYPE := UNOFFICIAL
+
+# SoC
+PROCESSOR_MODEL := MSM8998
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

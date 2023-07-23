@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_sagit.mk
+    $(LOCAL_DIR)/lineage_sagit.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_sagit-user \
-    cherish_sagit-userdebug \
-    cherish_sagit-eng
+    lineage_sagit-user \
+    lineage_sagit-userdebug \
+    lineage_sagit-eng

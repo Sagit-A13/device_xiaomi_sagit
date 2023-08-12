@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_sagit.mk
+    $(LOCAL_DIR)/syberia_sagit.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_sagit-user \
-    cherish_sagit-userdebug \
-    cherish_sagit-eng
+    syberia_sagit-user \
+    syberia_sagit-userdebug \
+    syberia_sagit-eng

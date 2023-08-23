@@ -21,21 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common Cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Komodo stuff.
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
-CHERISH_VANILLA := true
-
-PRODUCT_NAME := cherish_sagit
+PRODUCT_NAME := komodo_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Cherish stuff
+# Komodo stuff
+KOMODO_BUILD_TYPE := OFFICIAL
+IS_PHONE := true
+TARGET_APERTURE_CAM := true
 TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=deny2311
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

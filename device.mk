@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Fastcharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.xiaomi
+
 # Lineage hardware
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.sagit

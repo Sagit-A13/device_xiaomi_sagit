@@ -26,6 +26,9 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 TARGET_USES_MINI_GAPPS := true
 
+#include aperture camera
+TARGET_BUILD_APERTURE_CAMERA := true
+
 PRODUCT_NAME := evolution_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi

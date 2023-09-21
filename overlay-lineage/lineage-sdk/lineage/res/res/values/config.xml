@@ -86,6 +86,9 @@
     -->
     <integer name="config_longPressOnHomeBehavior">2</integer>
 
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
+
     <!-- Whether charging control should be enabled by default -->
     <bool name="config_chargingControlEnabled">false</bool>
 

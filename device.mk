@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
 
 
 #Add Via Browser when vanilla build
-ifeq ($(CHERISH_VANILLA), true)
+ifeq ($(WITH_GAPPS), false)
 PRODUCT_PACKAGES += \
     ViaBrowser
 endif

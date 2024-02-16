@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_sagit.mk
+    $(LOCAL_DIR)/afterlife_sagit.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_sagit-user \
-    derp_sagit-userdebug \
-    derp_sagit-eng
+    afterlife_sagit-user \
+    afterlife_sagit-userdebug \
+    afterlife_sagit-eng

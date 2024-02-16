@@ -22,16 +22,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
 # Inherit some common Derp stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-PRODUCT_NAME := derp_sagit
+PRODUCT_NAME := afterlife_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Derp stuff
+# Afterlife stuff
 TARGET_BOOT_ANIMATION_RES := 1080
+AFTERLIFE_MAINTAINER := deny2311
+USE_PIXEL_CHARGING := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+#Gapps etc
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
